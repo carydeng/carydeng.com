@@ -15,9 +15,12 @@ function ThemeProvider(props) {
         props: {
 
         },
+
+        typography: {
+            useNextVariants: true,
+        },
     };
     const theme = createMuiTheme(themeConfig);
-    console.log(theme);
     return (
         <MuiThemeProvider theme={theme}>
             <CssBaseline />
