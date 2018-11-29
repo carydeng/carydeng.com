@@ -2,6 +2,17 @@ import React from 'react';
 import {Parallax} from 'react-scroll-parallax';
 import withStyles from '@material-ui/core/styles/withStyles';
 
+/*
+Usage:
+        <HeroBanner
+            min={'-20%'}
+            max={'20%'}
+            image={image}
+        >
+            <h2>Hero</h2>
+        </HeroBanner>
+*/
+
 const HeroBanner = ({classes, image, min, max, children}) => (
     <div className={classes.container}>
         <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
@@ -23,7 +34,7 @@ const styles = () => ({
     },
     image: {
         width: '100vw',
-        height: '150vh', // this should be dynamic, right now it's fixed based on a min max offset
+        height: '100vh', // this should be dynamic, right now it's fixed based on a min max offset
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     },
