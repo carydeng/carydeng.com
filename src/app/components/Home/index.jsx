@@ -1,10 +1,11 @@
 import React from 'react';
+import PlaceHolder from './Placeholder';
 
 // TODO: Home
 const Home = () => (
-    <div className="flex justify-center">
-        <h2>Home Page</h2>
-    </div>
+    <section className="flex flex-column align-center">
+        <PlaceHolder/>
+    </section>
 );
 
 export default Home;
