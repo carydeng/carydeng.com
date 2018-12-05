@@ -1,15 +1,17 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Home from './Home';
+import MainContainer from './MainContainer';
+import Home from './Home/index';
 import Footer from './Footer';
 
 const Root = () => (
     <>
-        <Switch>
-            <Route exact path="/" component={Home} />
-        </Switch>
+        <MainContainer>
+            <Switch>
+                <Route exact path="/" component={Home} />
+            </Switch>
+        </MainContainer>
         <Footer />
     </>
 );
-
 export default Root;
